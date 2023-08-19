@@ -1,0 +1,114 @@
+-- component hero:
+ftd.image-src profile:
+caption tittle:
+body body:
+string button1:
+string link1:
+boolean $is-hover-1: false
+string button2:
+string link2:
+boolean $is-hover-2: false
+string button3:
+string link3:
+boolean $is-hover-3: false
+string button4:
+string link4:
+boolean $is-hover-4: false
+ftd.color text-color: $inherited.colors.text-strong
+ftd.color bg-color: $inherited.colors.background.base
+ftd.color border-color: $inherited.colors.border-strong
+optional ftd.color hover-color:
+optional ftd.responsive-type role:
+
+
+-- ftd.column:
+width: hug-content
+height: hug-content
+align-content: center
+background.solid: $inherited.colors.background.base
+
+-- ftd.image:
+src: $hero.profile
+width.fixed.percent: 20
+height.fixed.percent: 20
+border-radius.px: 50
+
+-- ftd.text: $hero.title
+margin.px: 20
+role: $inherited.types.heading-medium
+text-align: center
+color: black
+
+-- ftd.text: $hero.body
+margin.px: 20
+role: $inherited.types.copy-regular
+text-align: center
+color: black
+
+-- ftd.text: $hero.button1
+role: role: $inherited.types.label-large
+padding.px: 10
+border-radius.px: 10
+style: bold
+text-align: center
+color: $hero.text-color
+background.solid: $hero.bg-color
+background.solid if {hero.is-hover-1}: $inherited.hover-color
+$on-mouse-enter$: $ftd.set-bool($a = $hero.is-hover-1, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero.is-hover-1, v = false)
+link: $hero.link1
+
+-- ftd.text: $hero.button2
+role: role: $inherited.types.label-large
+padding.px: 10
+border-radius.px: 10
+style: bold
+text-align: center
+color: $hero.text-color
+background.solid: $hero.bg-color
+background.solid if {hero.is-hover-2}: $inherited.hover-color
+$on-mouse-enter$: $ftd.set-bool($a = $hero.is-hover-2, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero.is-hover-2, v = false)
+link: $hero.link2
+
+-- ftd.text: $hero.button3
+role: role: $inherited.types.label-large
+padding.px: 10
+border-radius.px: 10
+style: bold
+text-align: center
+color: $hero.text-color
+background.solid: $hero.bg-color
+background.solid if {hero.is-hover-3}: $inherited.hover-color
+$on-mouse-enter$: $ftd.set-bool($a = $hero.is-hover-3, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero.is-hover-3, v = false)
+link: $hero.link3
+
+-- ftd.text: $hero.button4
+role: role: $inherited.types.label-large
+padding.px: 10
+border-radius.px: 10
+style: bold
+text-align: center
+color: $hero.text-color
+background.solid: $hero.bg-color
+background.solid if {hero.is-hover-4}: $inherited.hover-color
+$on-mouse-enter$: $ftd.set-bool($a = $hero.is-hover-4, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $hero.is-hover-4, v = false)
+link: $hero.link4
+
+-- end: ftd.column
+
+-- end: hero
+
+-- ftd.color monochrome-dark:
+light: black
+dark: white
+
+-- ftd.color monochrome-light:
+light: white
+dark: black
+
+-- ftd.color change-color:
+light: #cae9ee
+dark: #e4b0ac

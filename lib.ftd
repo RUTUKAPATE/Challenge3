@@ -25,6 +25,7 @@ width: auto
 height: auto
 border-radius.px: 20
 padding.px: 20
+margin.px: 20
 
 -- ftd.container:
 height.fixed.px: 35

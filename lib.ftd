@@ -16,6 +16,7 @@ string button3:
 boolean $is-hover-3: false
 string button4:
 boolean $is-hover-4: false
+optional ftd.responsive-type role:
 
 -- ftd.column:
 background.solid: #ffecd2

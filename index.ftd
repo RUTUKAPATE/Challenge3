@@ -7,7 +7,7 @@ height: hug-content
 align-content: center
 background.solid: #D3D3D3
 
--- lib.bio: Login
+-- lib.bio: Bio
 profile: $assets.files.images.avatar2.jpg
 name: Muskan Khanna
 details: Beauty And Fashion

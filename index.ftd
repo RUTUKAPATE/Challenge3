@@ -3,7 +3,7 @@
 
 -- ftd.column:
 width: fill-container
-height: fill-container
+height: hug-content
 align-content: center
 background.solid: #D3D3D3
 

@@ -19,7 +19,7 @@ boolean $is-hover-4: false
 optional ftd.responsive-type role:
 
 -- ftd.column:
-background.solid: #ffb6c1
+background.solid: #ffecd2
 align-content: center
 width: auto
 height: auto
